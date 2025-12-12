@@ -1,7 +1,7 @@
 # 🟣 Purple Theme for Jellyfin
+Simple and modern theme for jellyfin
 
 ## 🚀 Install
-**Dashboard → General → Custom CSS**
 ```css
 @import url("https://cdn.jsdelivr.net/gh/Nino763/purple-theme-for-jellyfin@main/purple-theme.css");
 ```
