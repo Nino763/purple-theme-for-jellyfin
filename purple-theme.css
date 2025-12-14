@@ -228,3 +228,17 @@ a,
 .skinHeader-withBackground.osdHeader {
   background: var(--topOSDGradient);
 }
+/* Désactiver le masque et la hauteur forcée sur le lecteur */
+.videoPlayerContainer {
+  -webkit-mask: none !important;
+  mask: none !important;
+  height: auto !important;
+}
+
+/* Optionnel : laisser Jellyfin gérer la vidéo elle‑même */
+.videoPlayerContainer .html-video-player {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
