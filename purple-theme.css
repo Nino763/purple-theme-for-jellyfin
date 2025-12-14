@@ -198,3 +198,33 @@ a,
 .skinHeader-withBackground {
     box-shadow: none !important;
 }
+
+
+
+
+
+
+.videoPlayerContainer {
+  position: relative !important;
+  -webkit-mask: var(--themeVideoPlayerMask);
+  mask: var(--themeVideoPlayerMask);
+  height: 90vh;
+}
+
+.layout-mobile .videoPlayerContainer {
+  z-index: 1;
+  height: 35vh;
+}
+
+.videoPlayerContainer .html-video-player {
+  width: -webkit-fill-available;
+  object-fit: cover;
+}
+
+.videoOsdBottom.videoOsdBottom-maincontrols {
+  background: var(--bottomOSDGradient);
+}
+
+.skinHeader-withBackground.osdHeader {
+  background: var(--topOSDGradient);
+}
