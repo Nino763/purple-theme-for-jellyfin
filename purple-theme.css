@@ -199,3 +199,28 @@ a,
     box-shadow: none !important;
 }
 
+/* Affiches de films/séries arrondies style Apple */
+.cardContent-button,
+.cardContent-shadow,
+.itemDetailImage,
+.cardOverlayContainer,
+.cardImageContainer,
+.cardPadder,
+.listItemImage,
+.listItemImageButton,
+.blurhash-canvas {
+  border-radius: 12px !important;
+}
+
+/* Cartes de catégories arrondies */
+.cardScalable,
+.card {
+  border-radius: 12px !important;
+}
+
+/* Images des acteurs arrondies */
+#castContent .cardOverlayContainer.itemAction,
+#castContent .cardImageContainer,
+#castContent .cardScalable {
+  border-radius: 12px !important;
+}
