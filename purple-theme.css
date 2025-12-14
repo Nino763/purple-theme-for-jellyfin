@@ -1,4 +1,3 @@
-/* 1. Couleur d'accent violette (sans casser le reste) */
 :root {
   --accent-color: #9b5cff !important;
   --theme-accent: #9b5cff !important;
@@ -7,9 +6,6 @@
   --hover-color: #b57bff !important;
 }
 
-/* 2. Ne pas toucher au texte global ni aux cartes (affiches) */
-
-/* 3. Liens / éléments actifs en violet uniquement */
 a,
 .button-link,
 .detailRibbon a,
@@ -18,7 +14,6 @@ a,
   color: #9b5cff !important;
 }
 
-/* 4. Boutons généraux : violet sobre, sans bordures partout */
 .emby-button,
 .button-flat,
 .button-raised,
@@ -38,7 +33,6 @@ a,
   background-color: rgba(155,92,255,0.15) !important;
 }
 
-/* 5. TRANSPARENCE UNIQUEMENT sur les boutons de la page de login */
 #loginPage button,
 #loginPage .emby-button,
 #loginPage .emby-button.block,
@@ -62,7 +56,6 @@ a,
   box-shadow: 0 6px 25px rgba(181,123,255,0.5) !important;
 }
 
-/* 6. Barres de progression / sliders violets */
 .emby-progressbar,
 .slider-container .slider-track,
 .emby-slider-background {
@@ -75,13 +68,11 @@ a,
   background: #9b5cff !important;
 }
 
-/* 7. Focus violet discret */
 *:focus-visible {
   box-shadow: 0 0 0 3px rgba(155,92,255,0.4) !important;
   outline: none !important;
 }
 
-/* Forcer les titres de cartes/films en blanc, même s'ils sont des <a> */
 .cardText.cardText-primary a,
 .cardText-first a,
 .itemName a,
@@ -90,7 +81,6 @@ a,
   color: #ffffff !important;
 }
 
-/* Au cas où le titre n'est pas dans un <a> */
 .cardText.cardText-primary,
 .cardText-first,
 .itemName,
@@ -99,7 +89,6 @@ a,
   color: #ffffff !important;
 }
 
-/* Zoom léger sur les jaquettes sans toucher à la structure interne */
 .layout-desktop .card {
   transition: transform 0.18s ease-out;
   transform-origin: center center;
@@ -110,32 +99,25 @@ a,
   transform: scale(1.04);
 }
 
-
-
-
-/* Barre de progression générale (cartes, listes, etc.) */
 .emby-progressbar,
 .itemProgressBar,
 .slider-container .slider-track,
 .emby-slider-background {
-  background-color: rgba(155, 92, 255, 0.35) !important; /* fond de la barre */
+  background-color: rgba(155, 92, 255, 0.35) !important;
 }
 
-/* Partie remplie (progression réelle) en violet */
 .emby-progressbar-filled,
 .itemProgressBarForeground,
 .slider-container .slider-filled,
 .emby-slider-filled {
-  background-color: #9b5cff !important; /* violet plein */
+  background-color: #9b5cff !important;
 }
 
-/* Barre de progression dans le lecteur vidéo (si présent) */
 .videoOsdProgressInner,
 .videoOsdProgressInner .emby-progressbar-filled {
   background-color: #9b5cff !important;
 }
 
-/* Spinner Jellyfin : même style qu'origine, juste recoloré en violet */
 .mdl-spinner__layer-1 {
   border-color: #9b5cff !important;
 }
@@ -149,13 +131,11 @@ a,
   border-color: #9b5cff !important;
 }
 
-/* Base de la case à cocher */
 .emby-checkbox,
 .emby-checkbox-label .checkboxOutline {
   border-color: #9b5cff !important;
 }
 
-/* Case cochée : fond violet + bord violet */
 .emby-checkbox:checked + .checkboxOutline,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-checkbox-label .emby-checkbox:checked + .checkboxOutline {
@@ -163,27 +143,23 @@ a,
   border-color: #9b5cff !important;
 }
 
-/* Icône de coche en blanc */
 .checkboxIcon-checked,
 .emby-checkbox:checked + .checkboxOutline .checkboxIcon-checked,
 .emby-checkbox:checked + span + .checkboxOutline .checkboxIcon-checked {
   color: #ffffff !important;
 }
 
-/* Hover/focus : léger halo violet */
 .emby-checkbox:focus-visible + .checkboxOutline,
 .emby-checkbox:hover + .checkboxOutline {
   box-shadow: 0 0 0 2px rgba(155, 92, 255, 0.45) !important;
 }
 
-/* 1. Enlever le gros cadre violet autour du bloc complet */
 #loginPage .inputContainer,
 #loginPage .inputLabel {
   border: none !important;
   box-shadow: none !important;
 }
 
-/* 2. Encadré violet uniquement sur le vrai champ */
 #loginPage .emby-input,
 #loginPage input[type="text"],
 #loginPage input[type="password"] {
@@ -191,7 +167,6 @@ a,
   box-shadow: 0 0 0 1px rgba(155, 92, 255, 0.6) !important;
 }
 
-/* 3. Focus un peu plus visible */
 #loginPage .emby-input:focus,
 #loginPage input[type="text"]:focus,
 #loginPage input[type="password"]:focus {
@@ -199,12 +174,10 @@ a,
   box-shadow: 0 0 0 2px rgba(181, 123, 255, 0.8) !important;
 }
 
-/* Label du champ login en violet quand le champ est sélectionné */
 #loginPage .inputLabel {
-  color: #ffffff !important; /* couleur par défaut (blanc) */
+  color: #ffffff !important;
 }
 
-/* Quand le champ est focus : label en violet */
 #loginPage .inputContainer.focused .inputLabel,
 #loginPage .emby-input:focus ~ .inputLabel,
 #loginPage input[type="text"]:focus ~ .inputLabel,
@@ -212,15 +185,63 @@ a,
   color: #9b5cff !important;
 }
 
-/* Barre supérieure légèrement transparente */
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred,
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {
     background: none !important;
-    background-color: rgba(0, 0, 0, 0.35) !important; /* ajuste le 0.35 pour plus/moins de transparence */
+    background-color: rgba(0, 0, 0, 0.35) !important; 
     backdrop-filter: blur(6px);
 }
 
-/* Optionnel : suppression de la bordure sous la barre */
 .skinHeader-withBackground {
     box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+.videoOsdBottom.videoOsdBottom-maincontrols {
+    background: var(--bottomOSDGradient);
+}
+.videoOsdBottom.videoOsdBottom-maincontrols .btnPause {
+    font-size: 2em;
+}
+.nowPlayingBar .playPauseButton {
+    font-size: 2em;
+}
+.nowPlayingInfoContainer .btnPlayPause {
+    font-size: 3em;
+}
+.osdControls {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.itemProgressBar:not(.backgroundProgress):not(.playbackProgress):not(.transcodingProgress) {
+    backdrop-filter: var(--blurLarge);
+    background-color: var(--osdSeekBarBufferedColorAlpha) !important;
+    height: .35em;
+    overflow: hidden;
+    border-radius: var(--largeRadius);
+}
+.playbackProgress div {
+    background-color: var(--uiAccentColor);
+}
+.mdl-slider-background-flex {
+    border-radius: var(--smallRadius);
+    height: .4em;
+    margin-top: -.2em;
+    background: var(--osdSeekBarBufferedColorAlpha);
+}
+.mdl-slider-background-lower {
+    background-color: var(--osdSeekBarPlayedColor);
+}
+.mdl-slider-webkit-slider-thumb {
+    background: var(--osdSeekBarThumbColor);
+    width: 4px !important;
+    height: .4em !important;
+    border-radius: 0;
 }
