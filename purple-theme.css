@@ -199,7 +199,6 @@ a,
     box-shadow: none !important;
 }
 
-/* Affiches de films/séries arrondies style Apple */
 .cardContent-button,
 .cardContent-shadow,
 .itemDetailImage,
@@ -212,15 +211,29 @@ a,
   border-radius: 12px !important;
 }
 
-/* Cartes de catégories arrondies */
 .cardScalable,
 .card {
   border-radius: 12px !important;
 }
 
-/* Images des acteurs arrondies */
 #castContent .cardOverlayContainer.itemAction,
 #castContent .cardImageContainer,
 #castContent .cardScalable {
   border-radius: 12px !important;
+}
+
+.favorite-button {
+  padding: 12px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.2s ease-out !important;
+}
+
+.detailButton:hover,
+.btnUserItemRating:hover,
+.favorite-button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  transform: scale(1.05) !important;
 }
