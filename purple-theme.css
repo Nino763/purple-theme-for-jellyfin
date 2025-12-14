@@ -232,6 +232,7 @@ a,
   transition: all 0.2s ease-out !important;
 }
 
+/* Bouton favoris - garder la forme ronde */
 .favorite-button {
   padding: 12px !important;
   border-radius: 50% !important;
@@ -243,8 +244,10 @@ a,
 
 .detailButton:hover,
 .btnUserItemRating:hover,
+.paper-icon-button-light:hover,
 .favorite-button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.05) !important;
 }
+
 
