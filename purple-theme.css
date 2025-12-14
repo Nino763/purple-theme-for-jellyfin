@@ -1,3 +1,6 @@
+/* Inter Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   --accent-color: #9b5cff !important;
   --theme-accent: #9b5cff !important;
@@ -245,3 +248,4 @@ a,
     height: .4em !important;
     border-radius: 0;
 }
+
