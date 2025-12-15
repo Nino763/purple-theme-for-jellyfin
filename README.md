@@ -3,7 +3,7 @@ Simple and modern theme for jellyfin
 
 ## 🚀 Install
 ```css
-@import url("https://cdn.jsdelivr.net/gh/Nino763/purple-theme-for-jellyfin@main/theme.css");
+@import url("https://cdn.jsdelivr.net/gh/Nino763/purple-theme-for-jellyfin@main/styles.css");
 ```
 
 ## 👁️ Preview
